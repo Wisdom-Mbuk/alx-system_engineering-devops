@@ -1,2 +1,4 @@
 #!/bin/bash
-cp -u *.htm ..
+source_dir=$(pwd)
+destination_dir=$(dirname "$source_dir")
+cp -un "$source_dir"/*.html "$destination_dir"
